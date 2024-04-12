@@ -79,7 +79,8 @@ on importe fontawesome et l'icone qu'on veut utiliser dans le ficher ou on veut 
 - import { faHome } from "@fortawesome/free-solid-svg-icons";
 - import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-puis on le place dans une balise fontawesomeicon: // <FontAwesomeIcon icon={faHome} />
+puis on le place dans une balise fontawesomeicon: 
+// <FontAwesomeIcon icon={faHome} />
 
     //  ici un exemple simplifie de la nav bar avec des liens , pense a mettres dans une liste
     //  react va gerer la conversion de Link en balise a de htmlz
