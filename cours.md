@@ -16,10 +16,10 @@ Creer un nouvel app:
    lapin qui tourne, car on utilise la librairie de react qui a deja un style pour le app-logo
 - <img src={lapin} height="300" className="App-logo" ></img>
 
-# React router - router-dom
+### React router - router-dom
  
 
-browser router :
+Browser router :
 
 React Router est une bibliothèque pour les applications React qui permet de gérer le routage de manière dynamique. En d’autres termes, il aide à naviguer entre différentes pages ou composants dans une application sans avoir à recharger la page entière.
 
@@ -32,15 +32,19 @@ React Router est une bibliothèque pour les applications React qui permet de gé
 Ex: 
 
 // import {Routes, Route} from "react-router-dom"; 
+//import Home from "./components/Home";
+//import Business from "./components/Business";
+
 
 // <Routes>
+<!-- prend en parametre le chemin et le composant qu'on veut rendre -->
 // <Route path="/" element = {<Home/>}/>
 // <Route path="/Contact" element = {<Contact/>}/>
 // </Routes>
 
 "react-router-dom" est une version de React Router spécialement conçue pour les applications web.
 
-// regarder ce que c'est props
+// regarder ce que c'est props: c'est les propriétés
 
 - a propos des titres on peut appliquer des styles dans un même dossier car c'est considere comme prarents enfats. au sein du même composant. un peu flou a revoir
 
@@ -79,7 +83,8 @@ on importe fontawesome et l'icone qu'on veut utiliser dans le ficher ou on veut 
 - import { faHome } from "@fortawesome/free-solid-svg-icons";
 - import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-puis on le place dans une balise fontawesomeicon: // <FontAwesomeIcon icon={faHome} />
+puis on le place dans une balise fontawesomeicon: 
+// <FontAwesomeIcon icon={faHome} />
 
     //  ici un exemple simplifie de la nav bar avec des liens , pense a mettres dans une liste
     //  react va gerer la conversion de Link en balise a de htmlz
@@ -88,3 +93,41 @@ puis on le place dans une balise fontawesomeicon: // <FontAwesomeIcon icon={faHo
     //   <Link className="nav-item"  to={"/Contact"}>Nous Contacter</Link>
     //   {/* <h1>header</h1> */}
     // </nav>
+
+
+## Creation boucle
+
+La méthode .map(), est le moyen par défaut de boucler sur un tableau et de renvoyer un élément JSX valide contenant les données de chaque élément du tableau.     
+
+{data.map(person => <p key={person.name}>{`${person.name}, ${person.age} years old`}</p>)}
+
+
+Key : chaque élément créé à l’aide de la méthode .map() doit avoir un identifiant key, défini sur une valeur unique. 
+
+<p key={person.name}>{}</p>)
+
+  {/* dans react on ne peut pas utiliser mao comme un tableau on doit lui dire de retourner une liste d'intance à partir d'un tableau de données */}
+      {/* {Personnage.map(
+         (el, index) => key={index} nom={el.nom} img={el.img} equipe={el.equipage}  */}
+    {/* )} */}
+
+
+
+ ## Les hook = cycles de vie
+
+Chaque composant React suit le même cycle de vie : Un composant est monté lorsqu'il est ajouté à l'écran. Un composant se met à jour quand il reçoit de nouvelles props ou variables d'état, généralement à la suite d'une interaction. Un composant est démonté quand il est retiré de l'écran.
+
+
+1. **Montage (Mounting)** :
+   - **constructor()** : Le premier appel dans le cycle de vie. Il est utilisé pour initialiser l'état et lier les méthodes.
+   - **render()** : Cette méthode retourne l'élément React à rendre.
+   - **componentDidMount()** : Appelé après que le composant a été rendu dans le DOM. C'est l'endroit où vous pouvez effectuer des appels à des API externes ou à des mises à jour d'état qui nécessitent l'accès au DOM.
+
+2. **Mise à jour (Updating)** :
+   - **render()** : La méthode `render()` est à nouveau appelée à chaque mise à jour de l'état ou des propriétés du composant.
+   - **componentDidUpdate()** : Appelé après que le rendu a été effectué à chaque mise à jour. Il est utilisé pour effectuer des actions après que le composant a été mis à jour dans le DOM.
+
+3. **Démontage (Unmounting)** :
+   - **componentWillUnmount()** : Appelé juste avant que le composant ne soit retiré du DOM. C'est l'endroit où vous nettoyez les ressources telles que les abonnements aux événements ou les requêtes API.
+
+Ces phases constituent le cycle de vie d'un composant React, qui est essentiel pour comprendre comment les composants réagissent aux changements et aux événements. Avec l'introduction des hooks dans React, ces cycles de vie sont également disponibles dans les composants fonctionnels via des hooks comme `useEffect`.
