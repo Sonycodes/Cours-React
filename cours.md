@@ -9,11 +9,11 @@ Creer un nouvel app:
   - dans react tout est un composant même les images
   - avec jsx on peut utiliser lapin directement
 
-  <!-- on importe l'image avant de l'utiliser  -->
+  on importe l'image avant de l'utiliser 
 
 - import lapin from "../../assets/images/lapin.jpg";
 
-   <!-- lapin qui tourne, car on utilise la librairie de react qui a deja un style pour le app-logo -->
+   lapin qui tourne, car on utilise la librairie de react qui a deja un style pour le app-logo
 - <img src={lapin} height="300" className="App-logo" ></img>
 
 # React router - router-dom
@@ -30,13 +30,13 @@ React Router est une bibliothèque pour les applications React qui permet de gé
 * Dans le fichier App.js on va créeer nous routes cad nous chemins d'accès, il sera à l'intérieur de la balise main
 
 Ex: 
-<!-- 
-import {Routes, Route} from "react-router-dom"; 
 
-<Routes>
-  <Route path="/" element = {<Home/>}/>
-  <Route path="/Contact" element = {<Contact/>}/>
-</Routes> -->
+// import {Routes, Route} from "react-router-dom"; 
+
+// <Routes>
+// <Route path="/" element = {<Home/>}/>
+// <Route path="/Contact" element = {<Contact/>}/>
+// </Routes>
 
 "react-router-dom" est une version de React Router spécialement conçue pour les applications web.
 
@@ -79,7 +79,7 @@ on importe fontawesome et l'icone qu'on veut utiliser dans le ficher ou on veut 
 - import { faHome } from "@fortawesome/free-solid-svg-icons";
 - import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-puis on le place dans une balise fontawesomeicon: <FontAwesomeIcon icon={faHome} />
+puis on le place dans une balise fontawesomeicon: // <FontAwesomeIcon icon={faHome} />
 
     //  ici un exemple simplifie de la nav bar avec des liens , pense a mettres dans une liste
     //  react va gerer la conversion de Link en balise a de htmlz
