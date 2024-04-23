@@ -15,7 +15,6 @@ function App() {
     <main className="App">
 
 <Routes>
-
   <Route path="/" element = {<Home/>}/>
   <Route path="/Business" element = {<Business/>}/>
   <Route path="/Service" element = {<Service/>}/>

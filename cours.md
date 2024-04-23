@@ -1,5 +1,7 @@
 # Cours React
 
+PWA: Une progressive web app est une application web qui consiste en des pages ou des sites web, et qui peuvent apparaître à l'utilisateur de la même manière que les applications natives ou les applications mobiles. 
+
 Creer un nouvel app:
 
 - npx create-react-app my-app
@@ -114,6 +116,8 @@ Key : chaque élément créé à l’aide de la méthode .map() doit avoir un id
 
 
  ## Les hook = cycles de vie
+
+ https://www.youtube.com/watch?v=MQ5K-VLXW_o 
 
 Chaque composant React suit le même cycle de vie : Un composant est monté lorsqu'il est ajouté à l'écran. Un composant se met à jour quand il reçoit de nouvelles props ou variables d'état, généralement à la suite d'une interaction. Un composant est démonté quand il est retiré de l'écran.
 
