@@ -1,6 +1,14 @@
 # Cours React
+React c'est un framework front: 
 
-PWA: Une progressive web app est une application web qui consiste en des pages ou des sites web, et qui peuvent apparaître à l'utilisateur de la même manière que les applications natives ou les applications mobiles. 
+Veilles: 
+
+`PWA:` Une progressive web app est une application web qui consiste en des pages ou des sites web, et qui peuvent apparaître à l'utilisateur de la même manière que les applications natives ou les applications mobiles. 
+
+`Typescript` est une sous couche de javascript: TypeScript est un langage de programmation libre et open source développé par Microsoft qui a pour but d'améliorer et de sécuriser la production de code JavaScript. 
+
+
+Le rendu côté serveur d'une page web ou` Server Side Rendering (SSR)` est une technique de développement web qui consiste à créer les pages html côté serveur pour les envoyer toutes faites au navigateur. 
 
 Creer un nouvel app:
 
@@ -134,4 +142,12 @@ Chaque composant React suit le même cycle de vie : Un composant est monté lors
 3. **Démontage (Unmounting)** :
    - **componentWillUnmount()** : Appelé juste avant que le composant ne soit retiré du DOM. C'est l'endroit où vous nettoyez les ressources telles que les abonnements aux événements ou les requêtes API.
 
-Ces phases constituent le cycle de vie d'un composant React, qui est essentiel pour comprendre comment les composants réagissent aux changements et aux événements. Avec l'introduction des hooks dans React, ces cycles de vie sont également disponibles dans les composants fonctionnels via des hooks comme `useEffect`.
+Ces phases constituent le cycle de vie d'un composant React, qui est essentiel pour comprendre comment les composants réagissent aux changements et aux événements. Avec l'introduction des hooks dans React, ces cycles de vie sont également disponibles dans les composants fonctionnels via des hooks comme `useEffect`
+
+
+## utilisation vite
+
+* Vite est un outil de construction qui vise à fournir une expérience de développement plus rapide et plus légère pour les projets web modernes.
+
+
+- npm create vite@latest
