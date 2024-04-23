@@ -41,7 +41,7 @@ const Exercice = () => {
     // Gestionnaire de soumission du formulaire
     const handleSubmit = (event) => {
         event.preventDefault();
-        // Ajoute ici la logique pour traiter le formulaire soumis
+        // traitement formulaire
     };
 
     // Rendu du composant
