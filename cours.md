@@ -151,3 +151,18 @@ Ces phases constituent le cycle de vie d'un composant React, qui est essentiel p
 
 
 - npm create vite@latest
+
+
+
+exemple adobe: plusieurs applications un seul back 
+
+*** faire une veille sur : application mono treads explication et sur microservices (API)***
+
+
+### Context
+
+useContext: 
+via provider 
+
+`useContext` est un hook de React qui permet à un composant fonctionnel d'accéder au contexte d'un composant parent. Le contexte en React est un mécanisme qui permet de transmettre des données à travers l'arborescence des composants sans avoir besoin de passer explicitement les props à chaque niveau.
+
